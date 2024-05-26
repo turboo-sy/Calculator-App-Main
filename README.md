@@ -27,5 +27,4 @@ Feel free to explore the code and customize the app as per your needs. Contribut
 
 ## Screenshot
 
-![Calculator App Screenshot](https://user-images.githubusercontent.com/yourusername/calculator.png)
-
+![Calculator App Screenshot](./Screenshot (50).png)
