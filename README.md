@@ -27,4 +27,4 @@ Feel free to explore the code and customize the app as per your needs. Contribut
 
 ## Screenshot
 
-![Calculator App Screenshot](./Screenshot (50).png)
+![Calculator App](./Screenshot (50).png)
