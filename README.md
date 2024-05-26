@@ -2,7 +2,7 @@
 
 This is a simple yet powerful calculator app designed with a sleek and modern interface. The app allows users to perform basic arithmetic operations with ease.
 
-![Calculator App](images/calculator.png)
+![Calculator App](./desktop-preview.jpg)
 
 ## Description
 
