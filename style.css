@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Theme 1 */
+  --Very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(
+    223,
+    31%,
+    20%
+  );
+  --Very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%);
+  /* Keys1 */
+  --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+  --Red-key-background-toggle: hsl(6, 63%, 50%);
+  --Dark-red-key-shadow: hsl(6, 70%, 34%);
+  --Light-grayish-orange-key-background: hsl(30, 25%, 89%);
+  --Grayish-orange-key-shadow: hsl(28, 16%, 65%);
+  /* Text1 */
+  --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+  /* Theme 2 */
+  --Light-gray-main-background: hsl(0, 0%, 90%);
+  --Grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+  --Very-light-gray-screen-background: hsl(0, 0%, 93%);
+  /* Keys2 */
+  --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+  --Very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+  --Orange-key-background-toggle: hsl(25, 98%, 40%);
+  --Dark-orange-key-shadow: hsl(25, 99%, 27%);
+  --Light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+  --Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+  /* Text2 */
+  --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+  --White-text: hsl(0, 0%, 100%);
+  /* Theme 3 */
+  --Very-dark-violet-main-background: hsl(268, 75%, 9%);
+  --Very-dark-violet-toggle-background-keypad-background-screen-background: hsl(
+    268,
+    71%,
+    12%
+  );
+  /* Keys3 */
+  --Dark-violet-key-background: hsl(281, 89%, 26%);
+  --Vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+  --Pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+  --Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+  --Very-dark-violet-key-background: hsl(268, 47%, 21%);
+  --Dark-magenta-key-shadow: hsl(290, 70%, 36%);
+  /* Text3 */
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%);
+  --White-text: hsl(0, 0%, 100%);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* Theme 2 */
+body.theme2 {
+  background-color: var(--Light-gray-main-background);
+  transition: 700ms ease-in-out;
+}
+body.theme2 .container .input {
+  background-color: var(--Very-light-gray-screen-background);
+}
+body.theme2 .container .input .inputNum,
+body.theme2 .header h1,
+body.theme2 .header .switchTheme .titleTheme,
+body.theme2 .header .switchTheme .themeSwitch .calc-label {
+  color: var(--Very-dark-grayish-yellow);
+}
+
+body.theme2 .container .buttonsNum,
+body.theme2 .header .switchTheme .themeSwitch .point {
+  background-color: var(--Grayish-red-toggle-background-keypad-background);
+}
+body.theme2 .buttonsNum button {
+  background-color: var(--Light-grayish-yellow-key-background);
+}
+body.theme2 .buttonsNum .DEL,
+body.theme2 .buttonsNum .Rest {
+  background-color: var(--Dark-moderate-cyan-key-background);
+  box-shadow: 0px 4px var(--Very-dark-cyan-key-shadow);
+}
+
+body.theme2 .buttonsNum .Equal {
+  background-color: var(--Orange-key-background-toggle);
+  box-shadow: 0px 4px var(--Dark-orange-key-shadow);
+}
+
+/* Theme 3 */
+body.theme3 {
+  background-color: var(--Very-dark-violet-main-background);
+  transition: 700ms ease-in-out;
+}
+body.theme3 .header .switchTheme .themeSwitch .point::before {
+  background-color: var(--Pure-cyan-key-background-toggle);
+}
+body.theme3 .header .switchTheme .themeSwitch .point::after {
+  background-color: var(--Pure-cyan-key-background-toggle);
+}
+body.theme3 .container .input {
+  background-color: var(
+    --Very-dark-violet-toggle-background-keypad-background-screen-background
+  );
+}
+body.theme3 .container .input .inputNum,
+body.theme3 .header h1,
+body.theme3 .header .switchTheme .titleTheme,
+body.theme3 .header .switchTheme .themeSwitch .calc-label {
+  color: var(--Light-yellow);
+}
+
+body.theme3 .container .buttonsNum,
+body.theme3 .header .switchTheme .themeSwitch .point {
+  background-color: var(
+    --Very-dark-violet-toggle-background-keypad-background-screen-background
+  );
+}
+body.theme3 .buttonsNum button {
+  background-color: var(--Very-dark-violet-key-background);
+  color: var(--Light-yellow);
+  box-shadow: 0px 4px var(--Dark-magenta-key-shadow);
+}
+body.theme3 .buttonsNum .DEL,
+body.theme3 .buttonsNum .Rest {
+  background-color: var(--Dark-violet-key-background);
+  box-shadow: 0px 4px var(--Vivid-magenta-key-shadow);
+}
+
+body.theme3 .container .buttonsNum .Equal {
+  background-color: var(--Pure-cyan-key-background-toggle);
+  box-shadow: 0px 4px var(--Soft-cyan-key-shadow);
+}
+
+/* Default Theme */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--Very-dark-desaturated-blue-main-background);
+  transition: 700ms ease-in-out;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 38px;
+  width: 100%;
+}
+.header h1 {
+  color: var(--White-text);
+}
+.header .switchTheme {
+  display: flex;
+  align-items: flex-end;
+}
+.header .switchTheme .titleTheme {
+  color: var(--White-text);
+  text-transform: uppercase;
+  font-size: 0.96rem;
+  letter-spacing: 1px;
+  margin: 0px 23px 1px 0px;
+  font-weight: 700;
+}
+.header .switchTheme .themeSwitch {
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-around;
+  height: 45px;
+  width: 100px;
+  margin-top: -4px;
+}
+.header .switchTheme .themeSwitch .calc-label {
+  width: 100%;
+  height: 100%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--White-text);
+  text-align: center;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.header .switchTheme .themeSwitch .calc-input {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+.header .switchTheme .themeSwitch .point {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  border-radius: 20px;
+  background: var(
+    --Very-dark-desaturated-blue-toggle-background-keypad-background
+  );
+}
+.header .switchTheme .themeSwitch .point::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--Red-key-background-toggle);
+  transform: translate(-50%, -50%);
+}
+.header
+  .switchTheme
+  .themeSwitch
+  .calc-input:nth-of-type(2):checked
+  ~ .point::before {
+  left: calc(38% + 13px);
+  transition: left 250ms ease-in;
+}
+.header
+  .switchTheme
+  .themeSwitch
+  .calc-input:nth-of-type(3):checked
+  ~ .point::before {
+  left: calc(71% + 13px);
+  transition: left 250ms ease-in;
+}
+.header .switchTheme .themeSwitch .point::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--Red-key-background-toggle);
+  border-radius: 50%;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.container .input {
+  position: relative;
+  display: grid;
+  align-content: center;
+  height: clamp(88px, 20vw, 128px);
+  margin-top: 11px;
+  border-radius: 10px;
+  background: var(--Very-dark-desaturated-blue-screen-background);
+  transition: height 250ms ease-in;
+  padding: 10px 24px;
+  width: 100%;
+}
+.container .input .inputNum {
+  color: var(--White-text);
+  justify-self: end;
+  font-weight: 700;
+  font-size: clamp(2rem, 7vw, 2.9375rem);
+  padding-top: 2rem;
+}
+.container .buttonsNum {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(40px, 101px));
+  grid-template-rows: repeat(5, 60px);
+  justify-content: space-between;
+  gap: clamp(17px, 4vw, 28px) clamp(12px, 3vw, 25px);
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 24px 24px 28px 24px;
+  background: var(
+    --Very-dark-desaturated-blue-toggle-background-keypad-background
+  );
+  border-radius: 10px;
+  z-index: 0;
+  transition: padding 250ms ease-in;
+}
+.container .buttonsNum button {
+  cursor: pointer;
+  transition: background-color 700ms ease-in-out, color 700ms ease-in-out,
+    box-shadow 700ms ease-in-out;
+}
+.container .buttonsNum button:active {
+  animation: turboo 0ms ease-in forwards;
+  transform: translateY(4px);
+}
+.container .buttonsNum button {
+  background-color: var(--Light-grayish-orange-key-background);
+  color: #444b5a;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px var(--Grayish-orange-key-shadow);
+  font-weight: 700;
+}
+.container .buttonsNum .DEL {
+  background-color: var(--Desaturated-dark-blue-key-background);
+  box-shadow: 0px 4px var(--Desaturated-dark-blue-key-shadow);
+  color: var(--White-text);
+}
+.container .buttonsNum .Rest,
+.container .buttonsNum .Equal {
+  grid-column: span 2;
+  color: var(--White-text);
+}
+
+.container .buttonsNum .Rest {
+  background-color: var(--Desaturated-dark-blue-key-background);
+  box-shadow: 0px 4px var(--Desaturated-dark-blue-key-shadow);
+}
+.container .buttonsNum .Equal {
+  background-color: var(--Red-key-background-toggle);
+  box-shadow: 0px 4px var(--Dark-red-key-shadow);
+}
+
+/* start media screen */
+
+@media (min-width: 330px) and (max-width: 600px) {
+  .container {
+    transform: scale(0.9);
+  }
+}
+@media (min-width: 400px) {
+  .header
+    .switchTheme
+    .themeSwitch
+    .calc-label:nth-of-type(2):hover
+    ~ .point::after {
+    opacity: 1;
+    left: calc(38% + 13px);
+    transition: opacity 250ms ease-in;
+    background-color: transparent;
+  }
+}
+@media (min-width: 400px) {
+  .header
+    .switchTheme
+    .themeSwitch
+    .calc-label:nth-of-type(3):hover
+    ~ .point::after {
+    opacity: 1;
+    left: calc(71% + 13px);
+    transition: opacity 250ms ease-in;
+    background-color: transparent;
+  }
+}
+@keyframes turboo {
+  0% {
+    box-shadow: 0 4px var(--Desaturated-dark-blue-key-shadow);
+  }
+  100% {
+    box-shadow: 0 0px var(--Desaturated-dark-blue-key-shadow);
+  }
+}
