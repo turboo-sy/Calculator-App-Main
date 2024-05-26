@@ -24,7 +24,3 @@ This app is built using the following technologies:
 To use the calculator, simply enter the numbers and choose the desired operation. The app will display the result instantly. The theme switcher allows you to change the appearance of the calculator to match your preferences.
 
 Feel free to explore the code and customize the app as per your needs. Contributions are welcome!
-
-## Screenshot
-
-![Calculator App](./Screenshot (50).png)
